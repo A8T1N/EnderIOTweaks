@@ -9,10 +9,9 @@ import javax.annotation.Nonnull;
 
 @Mixin(value = ItemConduit.class, remap = false)
 public abstract class MixinItemConduit {
-
     /**
-     * アップグレードスロットの上限を強制的に64にします。
-     * @reason カスタムチューニングのため
+     * @author
+     * @reason
      */
     @Overwrite
     public int getUpgradeSlotLimit(@Nonnull ItemStack stack) {
