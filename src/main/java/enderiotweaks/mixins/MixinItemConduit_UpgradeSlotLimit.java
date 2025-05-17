@@ -8,7 +8,7 @@ import org.spongepowered.asm.mixin.Overwrite;
 import javax.annotation.Nonnull;
 
 @Mixin(value = ItemConduit.class, remap = false)
-public abstract class MixinItemConduit {
+public abstract class MixinItemConduit_UpgradeSlotLimit {
     /**
      * @author
      * @reason

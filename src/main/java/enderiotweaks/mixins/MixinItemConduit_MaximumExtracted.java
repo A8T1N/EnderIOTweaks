@@ -14,8 +14,9 @@ import org.spongepowered.asm.mixin.Shadow;
 import javax.annotation.Nonnull;
 import java.util.EnumMap;
 
+
 @Mixin(value = ItemConduit.class, remap = false)
-public abstract class MixinItemConduitAdv {
+public abstract class MixinItemConduit_MaximumExtracted {
 
     @Shadow
     @Final
@@ -63,4 +64,5 @@ public abstract class MixinItemConduitAdv {
         //その他の処理 (WIP)
         return functionUpgrade.getMaximumExtracted(stack.getCount());
     }
+
 }

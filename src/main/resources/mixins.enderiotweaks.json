@@ -4,8 +4,9 @@
   "minVersion": "0.8",
   "compatibilityLevel": "JAVA_8",
   "mixins": [
-    "MixinItemConduit",
-    "MixinItemConduitAdv"
+    "MixinEnderLiquidConduit_UpgradeSlotLimit",
+    "MixinItemConduit_MaximumExtracted",
+    "MixinItemConduit_UpgradeSlotLimit"
   ],
   "client": [],
   "server": [],
