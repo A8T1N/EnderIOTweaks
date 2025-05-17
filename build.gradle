@@ -497,8 +497,8 @@ configurations {
 
 String mixinProviderSpec = 'zone.rong:mixinbooter:9.1'
 dependencies {
-    compileOnly rfg.deobf("curse.maven:endercore-231868:4671384")
     compileOnly rfg.deobf("curse.maven:enderio-64578:4674244")
+    compileOnly rfg.deobf("curse.maven:endercore-231868:4671384")
     implementation rfg.deobf("curse.maven:mixin-booter-419286:6344449")
 
     if (usesMixins.toBoolean()) {

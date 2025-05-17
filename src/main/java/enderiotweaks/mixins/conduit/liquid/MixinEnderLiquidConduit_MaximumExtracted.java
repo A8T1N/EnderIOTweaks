@@ -12,7 +12,7 @@ import org.spongepowered.asm.mixin.Shadow;
 
 import javax.annotation.Nonnull;
 
-@Mixin(value = EnderLiquidConduit.class,remap = false)
+@Mixin(value = EnderLiquidConduit.class, remap = false)
 public abstract class MixinEnderLiquidConduit_MaximumExtracted {
 
     @Shadow
@@ -28,8 +28,8 @@ public abstract class MixinEnderLiquidConduit_MaximumExtracted {
         ItemStack upgradeStack = getFunctionUpgrade(dir);
         if (!upgradeStack.isEmpty()) {
             FunctionUpgrade upgrade = ItemFunctionUpgrade.getFunctionUpgrade(upgradeStack);
-            if (upgrade == FunctionUpgrade.EXTRACT_SPEED_UPGRADE){
-                return 1 + Math.min(upgradeStack.getCount(),64);
+            if (upgrade == FunctionUpgrade.EXTRACT_SPEED_UPGRADE) {
+                return 1 + Math.min(upgradeStack.getCount(), 64);
             }
             if (upgrade != null) {
                 return upgrade.getFluidSpeedMultiplier(upgradeStack.getCount());

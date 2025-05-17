@@ -8,7 +8,7 @@ import org.spongepowered.asm.mixin.Overwrite;
 
 import javax.annotation.Nonnull;
 
-@Mixin(value = EnderLiquidConduit.class,remap = false)
+@Mixin(value = EnderLiquidConduit.class, remap = false)
 public class MixinEnderLiquidConduit_UpgradeSlotLimit {
 
     /**
@@ -16,7 +16,7 @@ public class MixinEnderLiquidConduit_UpgradeSlotLimit {
      * @reason
      */
     @Overwrite
-    public int getUpgradeSlotLimit(@Nonnull ItemStack stack){
+    public int getUpgradeSlotLimit(@Nonnull ItemStack stack) {
         return stack.getItem() instanceof ItemFunctionUpgrade ? 64 : 15;
     }
 }

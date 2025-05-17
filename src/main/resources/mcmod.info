@@ -1,4 +1,5 @@
-[{
+[
+  {
     "modid": "${modid}",
     "name": "${modname}",
     "description": "Change in EnderIO Conduit Upgrade Limits !!!",
@@ -6,7 +7,10 @@
     "mcversion": "${mcversion}",
     "logoFile": "",
     "url": "",
-    "authorList": ["A8"],
+    "authorList": [
+      "A8"
+    ],
     "credits": "",
     "dependencies": []
-}]
+  }
+]
