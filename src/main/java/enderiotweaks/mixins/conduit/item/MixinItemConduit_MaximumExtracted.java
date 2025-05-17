@@ -1,4 +1,4 @@
-package enderiotweaks.mixins;
+package enderiotweaks.mixins.conduit.item;
 
 import crazypants.enderio.base.conduit.item.FunctionUpgrade;
 import crazypants.enderio.base.conduit.item.ItemFunctionUpgrade;

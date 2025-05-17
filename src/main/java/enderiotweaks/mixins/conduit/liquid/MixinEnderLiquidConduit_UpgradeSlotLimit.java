@@ -1,7 +1,6 @@
-package enderiotweaks.mixins;
+package enderiotweaks.mixins.conduit.liquid;
 
 import crazypants.enderio.base.conduit.item.ItemFunctionUpgrade;
-import crazypants.enderio.conduits.capability.IUpgradeHolder;
 import crazypants.enderio.conduits.conduit.liquid.EnderLiquidConduit;
 import net.minecraft.item.ItemStack;
 import org.spongepowered.asm.mixin.Mixin;
@@ -18,6 +17,6 @@ public class MixinEnderLiquidConduit_UpgradeSlotLimit {
      */
     @Overwrite
     public int getUpgradeSlotLimit(@Nonnull ItemStack stack){
-        return 64;
+        return stack.getItem() instanceof ItemFunctionUpgrade ? 64 : 15;
     }
 }

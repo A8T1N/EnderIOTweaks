@@ -1,5 +1,6 @@
-package enderiotweaks.mixins;
+package enderiotweaks.mixins.conduit.item;
 
+import crazypants.enderio.base.conduit.item.ItemFunctionUpgrade;
 import crazypants.enderio.conduits.conduit.item.ItemConduit;
 import net.minecraft.item.ItemStack;
 import org.spongepowered.asm.mixin.Mixin;
@@ -15,6 +16,7 @@ public abstract class MixinItemConduit_UpgradeSlotLimit {
      */
     @Overwrite
     public int getUpgradeSlotLimit(@Nonnull ItemStack stack) {
-        return 64;
+//        return 64;
+        return stack.getItem() instanceof ItemFunctionUpgrade ? 64 : 15;
     }
 }
